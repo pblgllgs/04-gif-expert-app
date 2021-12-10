@@ -18,10 +18,11 @@ export const AddCategory = ({setCategories}) => {
     return (
         <form onSubmit={handleSubmit}>
             <input
+                type="text"
                 placeholder="Ingresa una categoria"
                 value={inputValue}
                 onChange={handleInputchange}
-            ></input>
+            />
         </form>
     );
 };
