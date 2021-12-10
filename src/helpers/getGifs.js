@@ -4,7 +4,7 @@ export const getGifs = async (category) => {
     const resp = await fetch(
         `http://api.giphy.com/v1/gifs/search?api_key=${apiKey}&q=${encodeURI(category)}&limit=10`,
         {
-            'mode': 'cors',
+            'mode': 'no-cors',
             'headers': {
                 'Access-Control-Allow-Origin': '*',
             }
