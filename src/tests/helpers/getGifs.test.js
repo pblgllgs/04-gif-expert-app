@@ -8,7 +8,6 @@ describe('Pruebas en getGifs fetchAPI', () => {
 
     test('Debe de enviarse una category', async () => {
         const  elementos = await getGifs('');
-        console.log(elementos)
         expect(elementos).toEqual([]);
     })
     
